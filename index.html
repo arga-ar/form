@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>FORM</title>
+</head>
+
+<body>
+    <div class="row d-flex flex-row flex-wrap w-100">
+        <div data-aos="fade-right" class="p-5 side col-5 d-flex flex-column justify-content-between">
+            <div class="row">
+                <h2>Form Data Mahasiwa</h2>
+                <h2>Input data dan lihat hasilnya!</h2>
+            </div>
+            <div class="row">
+                <center>
+                    <img src="flow.svg">
+                </center>
+                </center>
+            </div>
+        </div>
+        <div data-aos="zoom-in-left" data-aos-duration="1000" class="col-7">
+            <form class="mt-3 row d-flex flex-row justify-content-center flex-wrap" action="data.php" method="POST">
+                <div class="col-sm-5 col-12">
+                    <div class="col-12">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input required type="text" class="form-control" id="nama" name="nama" />
+                    </div>
+                    <div class="col-12">
+                        <label for="univ" class="form-label">Universitas</label>
+                        <input required type="text" class="form-control" id="univ" name="univ" />
+                    </div>
+                    <div class="col-12">
+                        <label for="kota" class="form-label">Kota Universitas</label>
+                        <input required type="text" class="form-control" id="kota" name="kota" />
+                    </div>
+                    <div class="col-12">
+                        <label for="lahir" class="form-label">Tanggal Lahir</label>
+                        <input required type="date" class="form-control" id="lahir" name="lahir" />
+                    </div>
+                    <div class="col-12">
+                        <label for="alamat" class="form-label">Alamat</label>
+                        <input required type="text" class="form-control" id="alamat" name="alamat" />
+                    </div>
+                    <legend class="col-form-label col-sm-2 pt-0">Jenis Kelamin</legend>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="jenis" id="jenis" value="Laki - Laki" checked /> Laki - Laki <br/>
+                            <input class="form-check-input" type="radio" name="jenis" id="jenis" value="Perempuan" /> Perempuan
+                        </div>
+                    </div>
+                    <div class="col-auto mt-4">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-12">
+                    <div class="col-12">
+                        <label for="nrp" class="form-label">NRP</label>
+                        <input required type="text" class="form-control" id="nrp" name="nrp" />
+                    </div>
+                    <div class="col-md-12">
+                        <label for="jurusan" class="form-label">Jurusan</label>
+                        <select id="jurusan" class="form-select" name="jurusan">
+                                <option selected>Pilih...</option>
+                                <option>D4 Teknik Informatika</option>
+                                <option>D3 Teknik Informatika</option>
+                            </select>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="kelas" class="form-label">Kelas</label>
+                        <select id="kelas" class="form-select" name="kelas">
+                                <option selected>Pilih...</option>
+                                <option>1 D4 ITA</option>
+                                <option>1 D4 ITB</option>
+                                <option>1 D3 ITA</option>
+                                <option>1 D3 ITB</option>
+                            </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="github" class="form-label">Github</label>
+                        <input required type="text" class="form-control" id="github" name="github" />
+                    </div>
+                    <div class="col-12">
+                        <label for="linkedin" class="form-label">LinkedIn</label>
+                        <input required type="text" class="form-control" id="linkedin" name="linkedin" />
+                    </div>
+                    <div class="col-12">
+                        <label for="insatgram" class="form-label">Instagram</label>
+                        <input required type="text" class="form-control" id="insatgram" name="instagram">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    background-image: url('Arga.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+li {
+    font-size: 35px;
+}
+
+li a {
+    color: black;
+}
+
+li a :hover {
+    color: #093e88;
+}
+
+.line {
+    width: 70%;
+    height: 2px;
+    background-color: #256eeb;
+    margin-left: 20px;
+}
+
+.content li {
+    display: block;
+    font-size: 30px;
+}
+
+.text li {
+    margin-left: 7px;
+    font-size: 23px;
+}
+
+h4.univ {
+    color: #256eeb;
+}
+
+svg {
+    position: absolute;
+}

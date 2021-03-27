@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+.side {
+    background-color: #256eeb;
+    height: 100vh;
+    box-shadow: 8px 0px 12px -8px rgba(0, 0, 0, 0.59);
+}
+
+h2,
+h3 {
+    font-family: Montserrat;
+    color: white;
+}
+
+img {
+    width: 32vw;
+    -webkit-filter: drop-shadow(5px 15px 10px #073481);
+    filter: drop-shadow(5px 15px 10px #073481);
+}
+
+button.btn {
+    color: white;
+    background-color: #256eeb;
+    width: 50%;
+    transition: 0.2s;
+}
+
+button.btn :hover {
+    background-color: #093e88;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+select {
+    height: 35px;
+}
